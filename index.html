@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<title>
+    Обратная связь
+</title>
+
+<body class="body">
+    <div>
+        <div class="Header">
+            <p class="h1">Форма обратной связи</p>
+        </div>
+        
+            <form action="index.php" method="POST" name="register" enctype="multipart/form-data">
+                <div class="Contact_data">
+                    <div class="form-group">
+                        <label for="first_name">
+                            Как мы можем к Вам обращаться?
+                            <input type="text" id="first_name" name="first_name">
+                        </label>
+                        <span>*</span>
+                    </div>
+                    <br>
+                    <label for="email">
+                        Введите Вашу почту для обратной связи
+                        <input type="email" id="email" name="email">
+                        <span>*</span>
+                    </label>
+                </div>
+                <div class="Contact_data">
+                    <p> Выберите причину Вашего обращения</p>
+                    <select name="cause" id="cause">
+                        <option value="not_working">Сервис не работает</option>
+                        <option value="bug">Я заметил техническую ошибку</option>
+                        <option value="offer">У меня есть предложения по работе ресурса</option>
+                    </select>
+                    <br>
+                    <br>
+                    <p>Здесь Вы можете написать текст Вашего отзыва/предложения.</p>
+
+                    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+                    <br>
+                    <br>
+                    <label for="file">Так же Вы можете загрузить файл, описывающий Вашу проблему</label><br>
+                    <input type="file" id="userfile" name="userfile">
+                </div>
+                <br>
+                <p> Согласны ли Вы с обработкой персональных данных?</p>
+                <p>
+                    <span>*</span>
+                    <input type="radio" id="personal_data" name="personal_data" value="t">
+                    
+                    <label for="personal_data"> Да</label>
+                    
+                    <input type="radio" id="personal_data" name="personal_data" value="f" checked="checked">
+                    <label for="personal_data"> Нет</label>
+                </p>
+                <input class="btn btn-primary" type="submit" value="Подтвердить">
+                <br>
+                <input class="btn btn-danger" type="reset" value="Сбросить значения">
+            </form>
+        
+        <hr>
+        <!--<table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+            <?php foreach($rewiews_array as $review): ?>
+          <tr>
+            <th scope="row">1</th>
+            <td><?php echo $review["id"]; ?></td>
+            <td><?php echo $review["first_name"]; ?></td>
+            <td><?php echo $review["cause"]; ?></td>
+            <td><?php echo $review["review"]; ?></td>
+            <td><?php echo $review["personal_data"]; ?></td>
+            <?php if($review["personal_data"] === 't'): ?>
+            <td><?php echo $review["email"]; ?></td>
+            <?php endif; ?>
+          </tr>
+          
+          <?php endforeach; ?>
+        </tbody>
+      </table> -->
+        <a href="print_db.php"> Просмотреть историю обращений</a>
+    </div>
+</body>
+
+</html>

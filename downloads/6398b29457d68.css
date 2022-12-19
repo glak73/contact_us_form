@@ -1,0 +1,175 @@
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.adapt_font {
+  font-size: large;
+}
+
+.flex_class {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(3, 133, 133);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  font-style: bold;
+  text-align: right;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 0;
+  align-items: center
+}
+
+div {
+  border-radius: 10px;
+}
+
+body {
+  background-color: #b9aeb9;
+}
+
+.main_text_class {
+
+  text-align: center;
+  font-size: large;
+
+}
+
+.image-radius {
+  border-radius: 10px;
+  box-shadow: 2px 1px 5px #999999;
+  height: 150px;
+  width: 150px;
+  margin-right: 2%;
+  text-align: right;
+}
+
+
+
+.main_block {
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: 30%;
+  text-align: left;
+}
+
+
+ .text_block {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   
+  margin-top: 35px;
+  background-color: rgb(214, 152, 37);
+
+} 
+
+ .text_block h2 {
+  font-style: bold;
+  font-size: 25px;
+  text-decoration: underline;
+
+}
+
+.text_block img {
+  text-align: right;
+  width: 150px;
+  border-radius: 10%;
+  box-shadow: 2px 1px 5px #999999;
+}
+
+.text_block ul {
+  list-style: none;
+
+}
+
+.text_block li {
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+  div {
+    margin-left: 0%;
+    margin-right: 0%;
+    text-decoration: underline;
+  }
+
+  .header a {
+    font-size: medium;
+
+  }
+
+  .adapt_font {
+    font-size: x-large;
+  }
+
+  @media screen and (max-width: 640px) {
+    div {
+      margin-left: 0%;
+      margin-right: 0%;
+
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 550px) {
+    .container {
+      width: 576px;
+    }
+
+    header {
+      margin-left: 0%;
+      margin-right: 0%;
+
+    }
+
+    img {
+      width: 25px;
+    }
+
+    div {
+      margin-left: 0%;
+      margin-right: 0%;
+      text-decoration: none;
+    }
+  }
+@media screen and (max-width: 281px){
+  .container {
+    width: 653px;
+  }
+}
+  .text_block {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: small;
+
+  }
+
+  .header a {
+    font-size: small;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+  border-radius: 15px;
+}
+.navbar img {
+  width: 75px;
+  border-radius: 10px;
+}
+.navbar div p{
+  display: inline;
+  padding-right: 30px; 
+}
